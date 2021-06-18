@@ -75,7 +75,7 @@ btn.addEventListener('click', function(){
     }
 } );
 btn2.addEventListener('click', function(){
-    pCon.textContent = playRound("paper", computerPlay());
+    pCon.textContent = playRound("scissors", computerPlay());
     curScore.textContent = "User " + winNum + " - " + " Computer " + compWin;
     if (winNum + compWin >= 5){
         if (winNum >=3){
@@ -93,7 +93,7 @@ btn2.addEventListener('click', function(){
 
 } );
 btn3.addEventListener('click', function(){
-    pCon.textContent = playRound("scissors", computerPlay());
+    pCon.textContent = playRound("paper", computerPlay());
     curScore.textContent = "User " + winNum + " - " + " Computer " + compWin;
     if (winNum + compWin >= 5){
         if (winNum >=3){

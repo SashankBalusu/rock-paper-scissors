@@ -1,6 +1,82 @@
+<style>
+    body{
+        background:black;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        text-align:center;
+    }
+    header {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:-6%;
+        font-size:50px;
+        color:#cd66cc;
+        
+    }
+
+    button {
+        background-color: black;
+        border-color: black;
+    }
+    img {
+        width:175px;
+        height:175px;
+        background-color: black;
+    }
+    #rps{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr  1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "a footer b";
+        margin-top:150px;
+    }
+    #rock {
+        grid-area:"header";
+        
+    }
+    #paper {
+        grid-area: "header";
+    }
+    #scissors {
+        grid-area:"header";
+    }
+    #gameWin {
+        grid-area:"a";
+        color:#cd66cc;
+    }
+    #curScore {
+        grid-area:"footer";
+        color:#cd66cc;
+    }
+    #winner {
+        grid-area:"b";
+        color:#cd66cc;
+    }
+</style>
 <!DOCTYPE html>
 <html>
     <body>
+        <div>
+            <header>
+                <h1>Rock Paper Scissors!</h1> 
+            </header>
+            <div id = "rps">
+                <button id = "rock" > <img src = "images/Pokémon_Rock_Type_Icon.svg.png"></button>
+                <button id = "paper"><img src = "images/Blackvariant-Button-Ui-System-Folders-Drives-Scissor.ico"></button>
+                <button id = "scissors"><img src = "images/806177.png"></button>
+                <p id = "gameWin">Press a button to start</p>
+                <p id = "curScore">Current Score: </p>  
+                <p id = "winner">Winner: </p> 
+            </div>
+           
+        </div>
+        
         <script src ="script.js"> 
         </script>
 

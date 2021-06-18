@@ -49,8 +49,8 @@ function playRound(playerSelection, computerSelection){
 }
 
 const btn = document.querySelector("#rock");
-const btn2 = document.querySelector("#paper");
-const btn3 = document.querySelector("#scissors");
+const btn2 = document.querySelector("#scissors");
+const btn3 = document.querySelector("#paper");
 const pCon = document.querySelector("#gameWin");
 const curScore = document.querySelector("#curScore");
 const winner = document.querySelector("#winner");
